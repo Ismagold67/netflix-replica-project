@@ -11,7 +11,7 @@
     <!-- Container do Login -->
     <div class="container-login z-index">
         <br><br><br>
-        <header>
+        <header class="logo-login">
             <img src="assets/images/netflix.png" alt="">
             <h1>Quem está no grupo?</h1>
         </header>
@@ -25,8 +25,7 @@
                     <img src="assets/images/p2.png" alt="">
                 <p>Erinaldo</p>
             </div>
-            <!-- DEPOIS APAGA ESSE F DAQUI MALUCO -->
-            <div class="card-profile f"> 
+            <div class="card-profile"> 
                     <img src="assets/images/p3.png" alt="">
                 <p>Guilherme</p>
             </div>
@@ -64,9 +63,60 @@
     <!-- Container das séries -->
 
     <!-- Parte reservada para o conteúdo da parte superior do streaming -->
+    <div class="nav pop-display-none">
+        <img class="nav_logo" src="assets/images/netflix.png" alt="logo">
+        <div class="options-nav">
+            <ul>
+                <li>
+                    <a href="">Início</a>
+                </li>
+                <li>
+                    <a href="">Séries</a>
+                </li>
+                <li>
+                    <a href="">Filmes</a>
+                </li>
+                <li>
+                    <a href="">Bombando</a>
+                </li>
+                <li>
+                    <a href="">Minha Lista</a>
+                </li>
+                <li>
+                    <a href="">Navegar por Idiomas</a>
+                </li>
+            </ul>
+        </div>
+        <div class="icons">
+            <!-- ÍCONE DA LUPA DE PESQUISA -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            <!-- ICONE DO SINO DE NOTIFICAÇÃO -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/></svg>
+            <img class="nav_avatar f" src="assets/images/p1.png" alt="avatar">
+            <!-- ÍCONE DA SETA PARA BAIXO -->
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.3em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M182.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-9.2-9.2-11.9-22.9-6.9-34.9s16.6-19.8 29.6-19.8H288c12.9 0 24.6 7.8 29.6 19.8s2.2 25.7-6.9 34.9l-128 128z"/></svg>
+        </div>
+   </div> 
+
+   <header class="banner pop-display-none">
+       <div class="banner_contents">
+            <h1 class= "banner_title">Arsenal Financeiro 2.0</h1>
+            <div class="banner_buttons">
+                <button class="banner_button">Assistir</button>
+                <button class="banner_button">Minha lista</button>
+            </div>
+            <h1 class="banner_description">
+                O Começo da sua jornada como investidor. Eu te mostrarei uma estratégia de investimentos pronta apenas para você colocar em prática. No fim, te farei uma proposta irrecusável.
+            </h1>            
+       </div> 
+       <div class="banner--fadeBottom"></div>
+   </header>
+    
+
+   <!-- Fim parte topo -->
 
     <!-- Mostra as seis divs(card-series) com 6 cards de filmes/séries em cada uma das sections -->
-    <div class="contain-series">
+    <div class="contain-series pop-display-none">
         <h3>Populares na Netflix</h3>
         <div class="card-series">
             <!-- Uma section que guarda as seis imagens das séries/filmes -->
@@ -122,7 +172,7 @@
                 <img src="assets/images/dica1.png" alt="instinto-secreto">
                 <img src="assets/images/dica2.png" alt="lock-up">
                 <img src="assets/images/dica3.png" alt="greys-anatomy">
-                <img src="assets/images/alanflix.jpg" alt="lost">
+                <img src="assets/images/alanflix.jpg" alt="alanflix">
                 <img src="assets/images/dica5.png" alt="family-guy">
                 <img src="assets/images/dica6.png" alt="mad-man">
             </section>

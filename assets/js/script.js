@@ -1,6 +1,7 @@
 const img = document.querySelectorAll('.container-login .profiles img') // Seleciona todos os elementos "img" da página HTML
 const f = document.querySelector('.f') // Seleciona o elemento que vai ser alterado após o evento de click
-const containerSeries = document.querySelector('.contain-series') // Seleciona a div com a classe "contain-series"
+const displayNone = document.querySelectorAll('.pop-display-none') // Seleciona a classe set-display-none
+const containerSeries = document.querySelector('.container-series') // Seleciona a div com a classe container series
 const containerLogin = document.querySelector('.container-login') // Seleciona a div com a classe "container-login"
 const backgroundVideo = document.querySelector('.backgroundVideo') // Seleciona a div com a classe "backgroundVideo"
 
@@ -20,12 +21,16 @@ img.forEach(element => {
             }
         }
         var nameImg = list.join('')
-        f.setAttribute('src', `assets/images/${nameImg}`)
-        console.log(nameImg)
         //Faz manipulação no CSS
-        containerSeries.style.display = 'block'
-        containerSeries.classList.add('animation-container')
         containerLogin.style.display = 'none'
         backgroundVideo.style.display = 'none'
+
+        displayNone.forEach(element => {
+            element.classList.remove('pop-display-none')
+            element.classList.add('animation-container')
+        })
+        f.setAttribute('src', `assets/images/${nameImg}`)
+        console.log(ele)
+        console.log(nameImg)
     })
 });
